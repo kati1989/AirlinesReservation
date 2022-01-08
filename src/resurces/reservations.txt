@@ -1,0 +1,2 @@
+1,Mallorca,clasa I,2022.08.13,123
+2,Turcia,clasa II,2022.09.01,234
