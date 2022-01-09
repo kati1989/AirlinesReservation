@@ -51,5 +51,14 @@ class UserControllerTest {
         userController.adauga(u);
         userController.saveFisier();
     }
+    @Test
+    public void login(){
+        userController.login("Rebeca","123");
+    }
+
+    @Test
+    public void getUser(){
+        System.out.println(userController.getUser("Rebeca").descriere());
+    }
 
 }

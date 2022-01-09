@@ -122,4 +122,31 @@ public class UserController {
             e.printStackTrace();
         }
     }
+    public User login(String userName,String password){
+        for(int i=0;i< users.size();i++){
+            if(users.get(i).getUserName().equals(userName)&&users.get(i).getParola().equals(password)){
+                return users.get(i);
+            }
+        }
+        return  null;
+    }
+
+public  User getUser(String userName){
+        for(User u:users){
+            if(u.getUserName().equals(userName)) {
+                return u;
+            }
+        }
+    return  null;
 }
+}
+/*public  Costumers getCostumers(String nume){
+        for(Costumers c:costumers){
+            if(c.getFullName().equals(nume)){
+                return  c;
+            }
+        }
+        return  null;
+    }
+
+}*/
